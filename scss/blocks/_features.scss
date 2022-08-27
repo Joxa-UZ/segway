@@ -1,0 +1,115 @@
+.features__bg{
+    width: 100%;
+    max-width: 1376px;
+    height: 724px;
+    background-image: url("../images/features-bg.png");
+    background-repeat: no-repeat;
+}
+
+.features__box{
+    padding-top: 63px;
+}
+.features__theme{
+    margin: 0;
+    margin-bottom: 82px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 119.3%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #323941;
+}
+.features__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.features__item{
+    width: 147px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 103px;
+}
+.features__item:nth-child(4){
+    width: 167px;
+    margin-right: 0;
+}
+.features__item:last-child{
+    margin-right: 0;
+}
+.features__item:nth-child(5){
+    margin-top: 28px;
+}
+.features__item:nth-child(6){
+    margin-top: 28px;
+}
+.features__item:nth-child(7){
+    margin-top: 28px;
+}
+.features__item:nth-child(8){
+    margin-top: 28px;
+}
+.features__item::before{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/tires.png");
+    background-repeat: no-repeat;
+}
+.features__item:nth-child(2)::before{
+    background-image: url("../images/lights.png");
+}
+.features__item:nth-child(3)::before{
+    background-image: url("../images/speed.png");
+}
+.features__item:nth-child(4)::before{
+    background-image: url("../images/miles.png");
+}
+.features__item:nth-child(5)::before{
+    background-image: url("../images/grade.png");
+}
+.features__item:nth-child(6)::before{
+    background-image: url("../images/resistant.png");
+}
+.features__item:nth-child(7)::before{
+    background-image: url("../images/charging.png");
+}
+.features__item:nth-child(8)::before{
+    background-image: url("../images/battery.png");
+}
+.features__title{
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 43px;
+    background: linear-gradient(180deg, #009EFF 0%, #007BCD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.features__text{
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #999999;
+}
+
+@media only screen and (max-width: 956px) {
+    .features__item{
+        width: 100px;
+    }
+    .features__item:nth-child(4){
+        width: 120px;
+    }
+    .features__title{
+        text-align: center;
+        font-size: 23px;
+    }
+}

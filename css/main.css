@@ -318,7 +318,22 @@ template {
   display: none;
 }
 
-/* FONTS */ /* GENERAL */
+/* FONTS */
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* GENERAL */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -352,9 +367,9 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  /* font-family: "Roboto", "Arial", sans-serif; */
+  font-family: "Roboto", "Arial", sans-serif;
   /* font-size: 16px; */
-  /* font-weight: 400; */
+  font-weight: 400;
   /* line-height: var(--main-line-height); */
 }
 
@@ -386,4 +401,446 @@ body {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.acces {
+  padding-top: 63px;
+  padding-bottom: 80px;
+}
+
+.acces__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.acces__theme {
+  margin: 0;
+  margin-bottom: 31px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 119.3%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #323941;
+}
+
+.acces__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  list-style: none;
+}
+
+.acces__item {
+  width: 100%;
+  max-width: 295px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.acces__item::before {
+  content: "";
+  width: 176px;
+  height: 133px;
+  margin-bottom: 20px;
+  background-image: url("../images/engine-speaker.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.acces__item:first-child {
+  margin-right: 25px;
+}
+
+.acces__item:nth-child(2) {
+  margin-right: 25px;
+}
+
+.acces__item:nth-child(2)::before {
+  background-image: url("../images/extension-rod.png");
+  background-position: 50% 50%;
+}
+
+.acces__item:nth-child(2) .acces__info-titlebox {
+  width: 190px;
+}
+
+.acces__item:nth-child(3)::before {
+  background-image: url("../../images/great-set.png");
+  background-position: 50% 50%;
+}
+
+.acces__item:nth-child(4) {
+  margin-top: 48px;
+  margin-right: 25px;
+}
+
+.acces__item:nth-child(4)::before {
+  background-image: url("../images/backpack.png");
+  background-position: 50% 50%;
+}
+
+.acces__item:nth-child(5) {
+  margin-top: 48px;
+  margin-right: 25px;
+}
+
+.acces__item:nth-child(5)::before {
+  background-image: url("../images/external-battery.png");
+  background-position: 50% 50%;
+}
+
+.acces__item:nth-child(6) {
+  margin-top: 48px;
+}
+
+.acces__item:nth-child(6)::before {
+  background-image: url("../images/charger.png");
+  background-position: 50% 50%;
+}
+
+.acces__item:nth-child(6) .acces__info-titlebox {
+  width: 190px;
+}
+
+.acces__item:nth-child(7) {
+  margin-top: 48px;
+  margin-right: 25px;
+}
+
+.acces__item:nth-child(7)::before {
+  background-image: url("../images/scooter-bag.png");
+  background-position: 50% 50%;
+}
+
+.acces__item:nth-child(7) .acces__info-titlebox {
+  width: 190px;
+}
+
+.acces__item:nth-child(8) {
+  margin-top: 48px;
+  margin-right: 25px;
+}
+
+.acces__item:nth-child(8)::before {
+  background-image: url("../images/phone-holder.png");
+  background-position: 50% 50%;
+}
+
+.acces__item:nth-child(8) .acces__info-text {
+  margin-bottom: 25px;
+}
+
+.acces__item:nth-child(9) {
+  margin-top: 48px;
+}
+
+.acces__item:nth-child(9) .acces__info-text {
+  margin-bottom: 25px;
+}
+
+.acces__item:nth-child(9)::before {
+  background-image: url("../images/segway-phone-holder.png");
+  background-position: 50% 50%;
+}
+
+.acces__info {
+  width: 100%;
+  max-width: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.acces__info-title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 23px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #323941;
+}
+
+.acces__info-text {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 119.3%;
+  text-align: center;
+  color: #999999;
+}
+
+.acces__cost {
+  margin-bottom: 14px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-decoration: none;
+  color: #323941;
+}
+
+.acces__btn {
+  padding: 10px 15px;
+  font-size: 13px;
+  line-height: 119.3%;
+  color: #C6C6C6;
+  border: 1px solid #C6C6C6;
+  background-color: transparent;
+}
+
+.acces__btn:hover {
+  border: 1px solid transparent;
+  background-color: #009EFF;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.acces__link {
+  width: 229px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  background-color: #009EFF;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 974px) {
+  .acces__item:nth-child(2) {
+    margin-right: 0;
+  }
+  .acces__item:nth-child(3) {
+    margin-top: 48px;
+    margin-right: 25px;
+  }
+  .acces__item:nth-child(4) .acces__info-text {
+    margin-bottom: 30px;
+  }
+  .acces__item:nth-child(4) {
+    margin-right: 0;
+  }
+  .acces__item:nth-child(5) {
+    margin-right: 25px;
+  }
+}
+@media only screen and (max-width: 654px) {
+  .acces__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .acces__item {
+    margin-right: 25px;
+    margin-top: 0;
+  }
+  .acces__item:nth-child(3) {
+    display: none;
+  }
+  .acces__item:nth-child(4) {
+    display: none;
+  }
+  .acces__item:nth-child(5) {
+    display: none;
+  }
+  .acces__item:nth-child(6) {
+    display: none;
+  }
+  .acces__item:nth-child(7) {
+    display: none;
+  }
+  .acces__item:nth-child(8) {
+    display: none;
+  }
+  .acces__item:nth-child(9) {
+    display: none;
+  }
+}
+.features__bg {
+  width: 100%;
+  max-width: 1376px;
+  height: 724px;
+  background-image: url("../images/features-bg.png");
+  background-repeat: no-repeat;
+}
+
+.features__box {
+  padding-top: 63px;
+}
+
+.features__theme {
+  margin: 0;
+  margin-bottom: 82px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 119.3%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #323941;
+}
+
+.features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features__item {
+  width: 147px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 103px;
+}
+
+.features__item:nth-child(4) {
+  width: 167px;
+  margin-right: 0;
+}
+
+.features__item:last-child {
+  margin-right: 0;
+}
+
+.features__item:nth-child(5) {
+  margin-top: 28px;
+}
+
+.features__item:nth-child(6) {
+  margin-top: 28px;
+}
+
+.features__item:nth-child(7) {
+  margin-top: 28px;
+}
+
+.features__item:nth-child(8) {
+  margin-top: 28px;
+}
+
+.features__item::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/tires.png");
+  background-repeat: no-repeat;
+}
+
+.features__item:nth-child(2)::before {
+  background-image: url("../images/lights.png");
+}
+
+.features__item:nth-child(3)::before {
+  background-image: url("../images/speed.png");
+}
+
+.features__item:nth-child(4)::before {
+  background-image: url("../images/miles.png");
+}
+
+.features__item:nth-child(5)::before {
+  background-image: url("../images/grade.png");
+}
+
+.features__item:nth-child(6)::before {
+  background-image: url("../images/resistant.png");
+}
+
+.features__item:nth-child(7)::before {
+  background-image: url("../images/charging.png");
+}
+
+.features__item:nth-child(8)::before {
+  background-image: url("../images/battery.png");
+}
+
+.features__title {
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 43px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#009EFF), to(#007BCD));
+  background: linear-gradient(180deg, #009EFF 0%, #007BCD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.features__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #999999;
+}
+
+@media only screen and (max-width: 956px) {
+  .features__item {
+    width: 100px;
+  }
+  .features__item:nth-child(4) {
+    width: 120px;
+  }
+  .features__title {
+    text-align: center;
+    font-size: 23px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,232 @@
+.acces{
+    padding-top: 63px;
+    padding-bottom: 80px;
+}
+.acces__box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.acces__theme{
+    margin: 0;
+    margin-bottom: 31px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 119.3%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #323941;
+}
+
+.acces__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    list-style: none;
+}
+.acces__item{
+    width: 100%;
+    max-width: 295px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.acces__item::before{
+    content: "";
+    width: 176px;
+    height: 133px;
+    margin-bottom: 20px;
+    background-image: url("../images/engine-speaker.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.acces__item:first-child{
+    margin-right: 25px;
+}
+.acces__item:nth-child(2){
+    margin-right: 25px;
+}
+.acces__item:nth-child(2)::before{
+    background-image: url("../images/extension-rod.png");
+    background-position: calc(50%) calc(50%);
+}
+.acces__item:nth-child(2) .acces__info-titlebox{
+    width: 190px;
+}
+.acces__item:nth-child(3)::before{
+    background-image: url("../../images/great-set.png");
+    background-position: calc(50%) calc(50%);
+}
+.acces__item:nth-child(4){
+    margin-top: 48px;
+    margin-right: 25px;
+}
+.acces__item:nth-child(4)::before{
+    background-image: url("../images/backpack.png");
+    background-position: calc(50%) calc(50%);
+}
+.acces__item:nth-child(5){
+    margin-top: 48px;
+    margin-right: 25px;
+}
+.acces__item:nth-child(5)::before{
+    background-image: url("../images/external-battery.png");
+    background-position: calc(50%) calc(50%);
+}
+.acces__item:nth-child(6){
+    margin-top: 48px;
+}
+.acces__item:nth-child(6)::before{
+    background-image: url("../images/charger.png");
+    background-position: calc(50%) calc(50%);
+}
+.acces__item:nth-child(6) .acces__info-titlebox{
+    width: 190px;
+}
+.acces__item:nth-child(7){
+    margin-top: 48px;
+    margin-right: 25px;
+}
+.acces__item:nth-child(7)::before{
+    background-image: url("../images/scooter-bag.png");
+    background-position: calc(50%) calc(50%);
+}
+.acces__item:nth-child(7) .acces__info-titlebox{
+    width: 190px;
+}
+.acces__item:nth-child(8){
+    margin-top: 48px;
+    margin-right: 25px;
+}
+.acces__item:nth-child(8)::before{
+    background-image: url("../images/phone-holder.png");
+    background-position: calc(50%) calc(50%);
+}
+.acces__item:nth-child(8) .acces__info-text{
+    margin-bottom: 25px;
+}
+.acces__item:nth-child(9){
+    margin-top: 48px;
+}
+.acces__item:nth-child(9) .acces__info-text{
+    margin-bottom: 25px;
+}
+.acces__item:nth-child(9)::before{
+    background-image: url("../images/segway-phone-holder.png");
+    background-position: calc(50%) calc(50%);
+}
+.acces__info{
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.acces__info-title{
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #323941;
+}
+.acces__info-text{
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 119.3%;
+    text-align: center;
+    color: #999999;
+}
+.acces__cost{
+    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration: none;
+    color: #323941;
+}
+.acces__btn{
+    padding: 10px 15px;
+    font-size: 13px;
+    line-height: 119.3%;
+    color: #C6C6C6;
+    border: 1px solid #C6C6C6;
+    background-color: transparent;
+}
+.acces__btn:hover{
+    border: 1px solid transparent;
+    background-color: #009EFF;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.acces__link{
+    width: 229px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    background-color: #009EFF;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 974px) {
+    .acces__item:nth-child(2){
+        margin-right: 0;
+    }
+    .acces__item:nth-child(3){
+        margin-top: 48px;
+        margin-right: 25px;
+    }
+    .acces__item:nth-child(4) .acces__info-text{
+        margin-bottom: 30px;
+    }
+    .acces__item:nth-child(4){
+        margin-right: 0;
+    }
+    .acces__item:nth-child(5){
+        margin-right: 25px;
+    }
+}
+@media only screen and (max-width: 654px) {
+    .acces__list{
+        flex-wrap: nowrap;
+    }
+    .acces__item{
+        margin-right: 25px;
+        margin-top: 0;
+    }
+    .acces__item:nth-child(3){
+        display: none;
+    }
+    .acces__item:nth-child(4){
+        display: none;
+    }
+    .acces__item:nth-child(5){
+        display: none;
+    }
+    .acces__item:nth-child(6){
+        display: none;
+    }
+    .acces__item:nth-child(7){
+        display: none;
+    }
+    .acces__item:nth-child(8){
+        display: none;
+    }
+    .acces__item:nth-child(9){
+        display: none;
+    }
+}
